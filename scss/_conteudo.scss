@@ -1,0 +1,136 @@
+#nav-esquerda{
+    
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 70%;
+    
+
+    #container-esquerda{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 150px;
+        
+    }
+   
+    
+    
+    ul{
+        list-style: none;
+        padding-top: 150px;
+        
+    }
+    
+    #products-category{
+        ul{
+            margin-top: 50px;
+        }
+        li{
+            padding: 10px 0;
+            color: rgb(104, 102, 102);
+            font-size: 12px;
+            label{
+                cursor: pointer;
+                
+            }
+
+            #women-h, #men-h, #shoes-h, #brand-h{
+                opacity: 0;
+            }
+        }
+
+    }
+
+    #social-media{
+        margin-left: 50px;
+    }
+
+    #conteudo-centro{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
+        margin-left: 150px;
+
+        #barraprevious{
+            background-color: rgb(212, 207, 207);
+            width: 40px;
+            height: 30px;
+            transform: translateX(55px);
+            z-index: 0;
+            transition: 3s;
+            margin-top: 100px;
+            
+            
+           
+            
+        }
+
+        #previoustx{
+            
+            
+            z-index: 1;
+            word-spacing: 20px;
+            height: 30px;
+            transition: 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(130px);
+            
+            
+
+            &:hover ~ #barraprevious{
+                background-color: rgb(207, 210, 212);
+                width: 60px;
+                
+            }
+            
+        }
+        
+        
+        span{
+            font-size: 13px;
+        }
+        h1{
+            color: $laranja;
+            padding-bottom: 10px;
+        }
+        p{
+            font-weight:bolder ;
+            padding-bottom: 10px;
+        }
+
+        //posicionando os h1 e p
+
+        #t-shirts{
+            opacity: 0;
+            margin-left: -100px;
+            transform: translateY(100px);
+        }
+
+        #jacket{
+            margin-left: -100px;
+            transform: translateY(-130px);
+            opacity: 0;
+        }
+        #shoes{
+            margin-left: -100px;
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+        #brand{
+            margin-left: -100px;
+            transform: translateY(-280px);
+            opacity: 0;
+        }
+
+        
+
+       
+    }
+    
+}
+
+
+

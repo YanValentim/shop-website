@@ -1,0 +1,12 @@
+$laranja: rgb(255, 131, 49);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "scss/header";
+@import "scss/conteudo";
+
