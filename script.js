@@ -10,6 +10,10 @@ var jacketC = document.getElementById("jacket")
 var shoesC = document.getElementById("shoes")
 var brandC = document.getElementById("brand")
 
+var nav = document.getElementsByName('nav')
+
+
+
 
 women.addEventListener('click', clicar)
 men.addEventListener('click', clicar)
@@ -18,7 +22,7 @@ brand.addEventListener('click', clicar)
 
 
 
-var nav = document.getElementsByName('nav')
+
 
 function clicar(){
     if(nav[0].checked){
@@ -64,15 +68,15 @@ function clicar(){
         jacketC.style.opacity = '1'
         jacketC.style.transform = 'translate(100px, -130px)'
         
-        //tirando efeitos women principal
+        //tirando efeitos principal
 
-        tshirtsC.style.transform = 'translate(0px, 100px)'
+        tshirtsC.style.transform = 'translate(-100px, 100px)'
         tshirtsC.style.opacity = '0'
 
         shoesC.style.transform = 'translate(-100px, -200px)'
         shoesC.style.opacity = '0'
 
-        brandC.style.transform = 'translate(-200px, -280px)'
+        brandC.style.transform = 'translate(-100px, -280px)'
         brandC.style.opacity = '0'
 
 
@@ -102,10 +106,10 @@ function clicar(){
         jacketC.style.transform = 'translate(-100px, -130px)'
         jacketC.style.opacity = '0'
 
-        tshirtsC.style.transform = 'translate(0px, 100px)'
+        tshirtsC.style.transform = 'translate(-100px, 100px)'
         tshirtsC.style.opacity = '0'
 
-        brandC.style.transform = 'translate(-200px, -280px)'
+        brandC.style.transform = 'translate(-100px, -280px)'
         brandC.style.opacity = '0'
         
         //tirando efeitos men texto
@@ -136,7 +140,7 @@ function clicar(){
          jacketC.style.transform = 'translate(-100px, -130px)'
          jacketC.style.opacity = '0'
  
-         tshirtsC.style.transform = 'translate(0px, 100px)'
+         tshirtsC.style.transform = 'translate(-100px, 100px)'
          tshirtsC.style.opacity = '0'
 
          shoesC.style.transform = 'translate(-100px, -200px)'
@@ -153,3 +157,30 @@ function clicar(){
          shoestx.style.color = 'rgb(104, 102, 102)'
     }
 }
+
+//quantidade de produtos
+
+
+var res = document.getElementById('res')
+var soma = document.getElementById('operador-soma')
+var subtracao = document.getElementById('operador-subtracao')
+
+soma.addEventListener('click', clicarSoma)
+subtracao.addEventListener('click', clicarSubtracao)
+
+
+
+var count = Number(1)
+function clicarSoma(){
+        res.innerHTML = `${count += 1}`
+
+    }
+
+function clicarSubtracao(){
+   if(count > 1){
+        res.innerHTML = `${count -= 1}`
+   }
+    
+}
+
+//bordas - tamanhos dos produtos

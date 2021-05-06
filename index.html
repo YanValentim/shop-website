@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <div id="fundo">
         
 <div id="nav-esquerda">
     <div id="container-esquerda">
-        <div id="shop">
-            SHOP
-        </div>
+        <a href="#">
+            <div id="shop">
+                SHOP
+            </div>
+        </a>
         <div id="products-category">
             <ul>
                 <li>
@@ -34,13 +37,13 @@
         <div id="social-media">
             <ul style="display: flex; flex-direction: row;">
                 <li>
-                    mee
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                    mee
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                    mee
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
             </ul>
         </div>
@@ -51,10 +54,12 @@
             <p>100 REAIS PARÇA</p>
             
         </div>
-        <div id="previoustx">
-            &larr; <span>PREV</span>
+        <div id="container-barra">
+            <div id="previoustx">
+                &larr; PREV
+            </div>
+            <div id="barraprevious"></div>
         </div>
-        <div id="barraprevious"></div>
 
         <div id="jacket">
             <h1>MEN'S JACKET</h1>
@@ -73,25 +78,54 @@
 </div>
 <div id="container-direita">
     <nav>
-        <ul>
-            <li>
-                
+        <ul id="list-account">
+            <li style="margin-right: -45px;">
+                <a href="#">MY ACCOUNT</a>
             </li>
             <li>
-
+                <a href="#">SEARCH</a>
             </li>
         </ul>
-        <ul>
+        <ul id="list-symbols">
             <li>
-
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
             </li>
             <li>
-
+                <a href="#"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
     </nav>
-    <div>
-
+    <div id="container-next">
+        <div id="nexttx">NEXT &rarr;
+        </div>
+        <div id="barranext"></div>
+        <div>
+            <ul  id="lista-tamanhos">
+                <li id="small">
+                    S
+                </li>
+                <li id="medium">
+                    M
+                </li>
+                <li id="large">
+                    L
+                </li>
+        </ul>
+        <ul id="lista-quantidade">
+            <li class="operadores" id="operador-subtracao">
+               -
+            </li>
+            <li id="res">
+                1
+            </li>
+            <li class="operadores" id="operador-soma">
+                +
+            </li>
+        </ul>
+        <div id="cart-button">
+            ADD TO CART
+        </div>
+    </div>
     </div>
 </div>
 

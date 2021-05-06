@@ -19,7 +19,14 @@
     ul{
         list-style: none;
         padding-top: 150px;
-        
+        li{
+            padding-left: 20px;
+            font-size: 12px;
+            
+        }     
+        a{
+            color: rgb(0, 0, 0);
+        }   
     }
     
     #products-category{
@@ -52,46 +59,52 @@
         flex-direction: column;   
         margin-left: 150px;
 
-        #barraprevious{
-            background-color: rgb(212, 207, 207);
-            width: 40px;
-            height: 30px;
-            transform: translateX(55px);
-            z-index: 0;
-            transition: 3s;
-            margin-top: 100px;
-            
-            
-           
-            
-        }
+        
 
-        #previoustx{
+        #container-barra{
             
-            
-            z-index: 1;
-            word-spacing: 20px;
-            height: 30px;
-            transition: 2s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: translateY(130px);
-            
-            
-
-            &:hover ~ #barraprevious{
-                background-color: rgb(207, 210, 212);
-                width: 60px;
+            #barraprevious{
+                @extend #barra;
+                transform: translateX(55px);
+                position: relative;
+                
+                
+                
+                
+                
+               
                 
             }
+            #previoustx{
             
+            
+                @extend #barratx;
+                margin-left: 10px;
+                transform: translate(35px, 100px);
+                position: absolute;
+                
+                
+                
+                
+    
+                &:hover ~ #barraprevious{
+                    box-sizing: content-box;
+                    background-color: rgb(207, 210, 212);
+                    margin-left: -20px;
+                    width: 92px;
+                    z-index: 0;
+                    
+                    
+                    
+                    
+                }
+                
+            }
         }
+       
         
         
-        span{
-            font-size: 13px;
-        }
+       
         h1{
             color: $laranja;
             padding-bottom: 10px;
@@ -131,6 +144,7 @@
     }
     
 }
+
 
 
 

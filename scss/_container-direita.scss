@@ -1,0 +1,122 @@
+
+#container-direita{
+    nav{
+        font-size: 11px;
+        a{
+            color: black;
+        }
+        #list-account{
+            
+            li{
+                
+                padding-right: 20px;
+                width: 127px;
+                
+                
+                padding-top: 10px;
+                
+            }
+        }
+        #list-symbols{
+            li{
+                padding-top: 10px;
+                padding-left: 30px;
+                padding-right: 60px;
+            }
+        }
+        @extend flex-direction-row;
+        ul{
+            @extend flex-direction-row;
+            list-style: none;
+            
+        }
+    }
+
+
+    #container-next{
+        width: 255px;
+        height: 150px;
+        transform: translate(150px, 30px)
+       
+
+    }
+    
+    div #barranext{
+        @extend #barra;
+        transform: translateX(115px);
+        position: relative;
+        
+        
+        
+    }
+    div #nexttx{
+        @extend #barratx;
+        position: absolute;
+        transform: translateX(100px);
+        &:hover + #barranext{
+            box-sizing: content-box;
+            background-color: rgb(207, 210, 212);
+            width: 92px;
+            margin-left: -20px;
+        
+
+    }
+}
+
+#lista-tamanhos{
+    display: flex;
+    list-style: none;
+    li{
+        width: 20px;
+        height: 20px;
+        border: rgb(212, 211, 211) solid 1.5px;
+        border-radius: 50%;
+        font-size: 10px;
+        margin: 10px 15px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            border: $laranja solid 1.5px;
+        }
+    }
+}
+
+#lista-quantidade{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    border: rgb(226, 226, 226) solid 1.5px;
+    li{
+        font-weight: bold;
+    }
+    .operadores{
+        cursor: pointer;
+        width: 20px;
+       
+    }
+}
+
+#cart-button{
+    margin-top: 10px;
+    background-color: $laranja;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: orange;
+    }
+}
+
+}
