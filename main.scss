@@ -10,6 +10,10 @@ a{
     padding: 0px;
 }
 
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
 
 flex-direction-row{
     display: flex;
@@ -40,4 +44,4 @@ flex-direction-row{
 @import "scss/header";
 @import "scss/container-esquerda";
 @import "scss/container-direita";
-
+@import "scss/responsividade";

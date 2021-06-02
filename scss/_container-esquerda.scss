@@ -65,7 +65,7 @@
             
             #barraprevious{
                 @extend #barra;
-                transform: translateX(55px);
+                transform: translate(65px, 100px);
                 position: relative;
                 
                 
@@ -80,7 +80,7 @@
             
                 @extend #barratx;
                 margin-left: 10px;
-                transform: translate(35px, 100px);
+                transform: translate(35px, 200px);
                 position: absolute;
                 
                 
@@ -120,22 +120,38 @@
             opacity: 0;
             margin-left: -100px;
             transform: translateY(100px);
+            background-color: rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
         }
 
         #jacket{
             margin-left: -100px;
             transform: translateY(-130px);
             opacity: 0;
+            background-color: rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
+            
         }
         #shoes{
             margin-left: -100px;
             transform: translateY(-200px);
             opacity: 0;
+            background-color: rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
+            
         }
         #brand{
             margin-left: -100px;
-            transform: translateY(-280px);
+            transform: translateY(-300px);
             opacity: 0;
+            background-color: rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
+        }
+        #brand, #shoes, #jacket, #t-shirts{
+            &:hover{
+                background-color:rgba(255, 255, 255, 0.904) ;
+                cursor: pointer;
+            }
         }
 
         

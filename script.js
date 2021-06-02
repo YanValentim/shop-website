@@ -43,7 +43,7 @@ function clicar(){
         shoesC.style.transform = 'translate(-100px, -200px)'
         shoesC.style.opacity = '0'
 
-        brandC.style.transform = 'translate(-100px, -280px)'
+        brandC.style.transform = 'translate(-100px, -300px)'
         brandC.style.opacity = '0'
 
         //tirando efeitos men texto
@@ -76,7 +76,7 @@ function clicar(){
         shoesC.style.transform = 'translate(-100px, -200px)'
         shoesC.style.opacity = '0'
 
-        brandC.style.transform = 'translate(-100px, -280px)'
+        brandC.style.transform = 'translate(-100px, -300px)'
         brandC.style.opacity = '0'
 
 
@@ -109,7 +109,7 @@ function clicar(){
         tshirtsC.style.transform = 'translate(-100px, 100px)'
         tshirtsC.style.opacity = '0'
 
-        brandC.style.transform = 'translate(-100px, -280px)'
+        brandC.style.transform = 'translate(-100px, -300px)'
         brandC.style.opacity = '0'
         
         //tirando efeitos men texto
@@ -134,7 +134,7 @@ function clicar(){
 
         brandC.style.transition = '5s opacity, 7s transform'
         brandC.style.opacity = '1'
-        brandC.style.transform = 'translate(100px, -280px)'
+        brandC.style.transform = 'translate(100px, -300px)'
 
          //tirando efeitos men principal
          jacketC.style.transform = 'translate(-100px, -130px)'

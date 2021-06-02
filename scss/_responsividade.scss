@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    #fundo{
+        display: flex;
+        flex-direction: column;
+    }
+    #social-media ul li{
+        font-size: 50px;
+    }
+
+    #fundo{
+        background-size: 100% 200px;
+        background-position: initial;
+    }
+    #products-category{
+        display: none;
+        
+    }    
+    #conteudo-centro{
+        #t-shirts{
+            opacity: 1;
+            background-color: red;
+        }
+    }
+}
+
